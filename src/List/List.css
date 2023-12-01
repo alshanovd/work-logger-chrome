@@ -1,0 +1,45 @@
+.List {
+    overflow-y: scroll;
+    height: 10px;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.List.show {
+    display: block;
+    opacity: 1;
+    height: 320px;
+}
+
+.List ~ .overlay {
+    height: 400px;
+    width: 600px;
+    background-color: #9e9e9eb3;
+    top: -15px;
+    left: -20px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: -1;
+    display: flex;
+}
+
+.List ~ .overlay.show {
+    opacity: 1;
+    z-index: 10;
+}
+
+.List ~ .overlay .overlay-click {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 600px;
+    display: flex;
+}
+

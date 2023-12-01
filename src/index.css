@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Nunito-Medium";
+    src: url("/public/Nunito-Medium.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif; */
+    font-family: "Nunito-Medium", Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgba(255, 255, 255, 0.956);
+    background-color: hsl(194 91% 18% / 1);
+
+    height: 400px;
+    width: 600px;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.border-radius {
+    border-radius: 2px !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus{
+    outline: none;
+}

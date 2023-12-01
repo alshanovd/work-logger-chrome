@@ -1,0 +1,23 @@
+.Settings {
+    margin: 40px 0 0 30px;
+    width: 420px;
+}
+
+label, .show-all input {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+label {
+    margin-left: 10px;
+}
+
+.show-all {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.show-all input {
+    transform: scale(1.5);
+}

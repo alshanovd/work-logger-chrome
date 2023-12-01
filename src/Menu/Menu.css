@@ -1,0 +1,28 @@
+.settings {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+    margin: 15px;
+}
+
+/* .menu .top .settings:last-child {
+    margin-top: 0;
+} */
+
+.settings:hover,
+.active {
+    opacity: 1;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    width: 55px;
+    height: 100%;
+    /* background-color: #ffffff50; */
+    background-color: #00000030;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border-right: 1px solid #ffffff50; */
+}

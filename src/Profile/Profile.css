@@ -1,0 +1,30 @@
+.Profile {
+    position: absolute;
+    top: 0;
+    left: 55px;
+    height: 50px;
+    background-color: #00000050;
+    width: calc(100% - 55px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Profile div {
+    display: flex;
+    align-items: center;
+}
+
+.Profile img {
+    margin: 5px 10px;
+    width: 40px;
+}
+
+.Profile .board {
+    margin: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.Profile .board span {
+    margin-right: 10px;
+}

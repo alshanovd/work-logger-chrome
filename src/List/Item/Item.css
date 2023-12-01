@@ -1,0 +1,84 @@
+.Issue {
+    display: flex;
+    font-size: 1rem;
+    cursor: default;
+    transition: background-color .2s ease-in-out;
+}
+
+.Issue:hover {
+    background-color: #ffffff40;
+    cursor: pointer;
+}
+
+.Issue .pin-button {
+    width: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.Issue .status {
+    text-overflow: ellipsis;
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #4a6785;
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 4px;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Issue .title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 10px;
+    width: 328.5px;
+    padding-right: 10px;
+    transition: width 0.2s ease-in-out;
+}
+
+.Issue:hover .title {
+    width: 280px;   
+}
+
+.Issue .task {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.Issue .done {
+    background-color: #14892c;
+    color: white;
+}
+
+.Issue .new {
+    background-color: #4a6785;
+    color: white;
+}
+
+.Issue .indeterminate {
+    background-color: #ffd351;
+    color: #594300;
+}
+
+.Issue .content {
+    display: flex;
+    padding: 5px;
+}
+
+.Issue:hover .pin-button {
+    width: 48.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0.8);
+}
+
+.Issue:hover .pin-button:hover {
+    transform: scale(1.2);
+    filter: filter(50%);
+    filter: brightness(1);
+}

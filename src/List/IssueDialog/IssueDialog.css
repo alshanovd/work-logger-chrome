@@ -1,0 +1,97 @@
+.IssueDialog {
+    background: hsl(0deg 0% 0% / 75%);
+    box-shadow: 2px 2px 10px hsla(0, 0%, 0%, 0.699);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 400px;
+
+    display: grid;
+
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+    padding: 1rem;
+}
+
+.IssueDialog .title {
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.IssueDialog .title a {
+    color: #0065ff;
+    text-wrap: nowrap;
+    font-size: 1.2rem;
+}
+
+.IssueDialog .time {
+    padding: 0 20px;
+}
+
+.IssueDialog .time-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.IssueDialog .time-buttons Button {
+    margin: 0 0 0 5px;
+}
+
+.IssueDialog .time-buttons Input + Input {
+    margin-top: 5px;
+}
+
+.IssueDialog .charge-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.IssueDialog .charge-buttons Button {
+    margin: 0;
+}
+
+.IssueDialog .MuiFormControl-root input {
+    color: white;
+    font-weight: bold;
+}
+
+.IssueDialog .MuiOutlinedInput-notchedOutline {
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.IssueDialog .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.IssueDialog .charge-buttons Button:last-child {
+    background-color: #0066ffc6;
+    color: white;
+}
+
+.IssueDialog .charge-buttons Button:last-child:hover {
+    background-color: #0066ff;
+}
+
+.notify {
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.notify.show {
+    opacity: 10;
+    z-index: 1;
+}
